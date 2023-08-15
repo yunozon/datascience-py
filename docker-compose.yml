@@ -13,6 +13,7 @@ services:
     # ホスト内のworkディレクトリとコンテナ内の/home/jovyan/workディレクトリが紐づいているイメージ
     volumes:
       - ./work:/home/jovyan/work
+      - ./study:/home/jovyan/study
     # 最後にjupyterLabに接続するためのコマンドを実行する。
     command: start-notebook.sh --NotebookApp.token=''
 
