@@ -14,6 +14,7 @@ services:
     volumes:
       - ./work:/home/jovyan/work
       - ./study:/home/jovyan/study
+      - ./data:/home/jovyan/data
     # 最後にjupyterLabに接続するためのコマンドを実行する。
     command: start-notebook.sh --NotebookApp.token=''
 
