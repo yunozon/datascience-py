@@ -1,0 +1,19 @@
+{
+  "name": "Data Science Study Environment",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "notebook",
+  "workspaceFolder": "/home/jovyan/work",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "ms-python.python",
+    "ms-toolsai.jupyter"
+  ],
+  "postCreateCommand": "echo 'Container ready!'",
+  "shutdownAction": "stopCompose",
+  "forwardPorts": [8888],
+  "remoteUser": "jovyan"
+}
+
+
