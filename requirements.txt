@@ -1,2 +1,6 @@
 xgboost
+lightgbm
+catboost
+category_encoders
+hyperopt
 graphviz
